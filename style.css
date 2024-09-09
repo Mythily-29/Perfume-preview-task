@@ -1,0 +1,128 @@
+body{
+    background-color:hsl(30, 38%, 92%);
+}
+.contains{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 7%;
+}
+
+.sub-container{
+    width: 100%;
+    background-color:hsl(0, 0%, 100%); 
+    border-radius: 10px;
+    display: flex;
+   
+}
+.image-add{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 50%;
+}
+.mobile-view{
+    display: none;
+}
+.paragraph{
+    padding: 20px; 
+    display:flex;
+    flex-wrap: wrap;   
+}
+.paragraph p{
+    font-family: "Montserrat", sans-serif;
+    word-spacing:5px;   
+    font-size: 14px; 
+    color: rgb(105, 103, 103);
+    
+}
+.sample{
+    margin-top: -20px;
+}
+.paragraph h2{
+    font-size: 40px;
+    font-family: "Fraunces", serif;
+    margin-top: -6px;
+}
+.small {
+    display:flex;
+    margin-bottom:-auto;
+
+}
+.small h1{
+    color: hsl(158, 36%, 37%);
+    margin-top: 5px;
+    font-family: "Fraunces", serif;
+}
+.small p{
+    margin-left: 22px;
+    text-decoration: line-through;
+    
+    font-family: "Montserrat", sans-serif;
+}
+ button{
+    width: 260px;
+    height: 48px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(1, 26, 1);
+}
+@media(max-width:1440px){
+    .sub-container{
+        width: 50%;
+    }
+}
+
+@media(max-width:380px){
+    .sub-container{
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .image-add{
+        display: none;
+    }
+    .mobile-view{
+        display: ruby;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+   .paragraph h2{
+    font-size: 35px;
+   }
+   button{
+    width: 310px;
+    height: 48px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(1, 26, 1);
+}
+.paragraph p{
+    font-family: "Montserrat", system-ui;
+    font-optical-sizing: auto;
+}
+
+}
